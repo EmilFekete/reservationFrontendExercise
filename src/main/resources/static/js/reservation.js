@@ -4,13 +4,6 @@
 
 "use strict";
 
-$(function(){
-  $.datepicker.setDefaults(
-    $.extend( $.datepicker.regional[ '' ] )
-  );
-  $( '.datepicker' ).datepicker();
-});
-
 (function() {
   
   function collectFormInput() {

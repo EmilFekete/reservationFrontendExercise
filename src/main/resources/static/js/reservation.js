@@ -4,6 +4,13 @@
 
 "use strict";
 
+$(function(){
+  $.datepicker.setDefaults(
+    $.extend( $.datepicker.regional[ '' ] )
+  );
+  $( '.datepicker' ).datepicker();
+});
+
 (function() {
   
   function collectFormInput() {
@@ -18,6 +25,8 @@
   
 
 $(document).ready(function() {
+
+ 
 
   $("#submitReservation").click(function(e) {     
     e.preventDefault();           

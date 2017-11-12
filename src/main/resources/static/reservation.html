@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Submit Reservation</title>
   <link rel="stylesheet" type="text/css" href="/css/reservation.css" />
 </head>
+
 <body>
 
-  <form id="reservationForm">
-    <div class="form-row">
-      <label>Facility ID:</label>
-      <input name="resourceId" type="input" />
-    </div>
-    
-  <div class="form-row">
-    <label>Start Date:</label>
-    <input name="fromDate"   type="date" />
-  </div>
-    
-  <div class="form-row">
-    <label>End Date:</label>
-    <input name="toDate"     type="date" />
-  </div>
-    
-  <div class="form-row">
-    <label>Reserved By:</label>
-    <input name="owner"      type="input" size="64" />
-  </div>
-    
-  <div class="form-row">
-    <button id="submitReservation">Place Reservation</button>
-  </div>
-    
-  
-    <div id="validation-error" class="message">Reservation failed - please check your input for completeness.</div>
-    <div id="conflict-error"   class="message">The room is already reserved for this period, please choose a different period.</div>
-    <div id="system-error"     class="message">Reservation failed - please try again later.</div>
-  </form>
+  <div class="container">
+    <form id="reservationForm">
+      <div class="form-row">
+        <label>Facility ID:</label>
+        <input name="resourceId" type="input" />
+      </div>
 
-  <div id="reservation-successful-message" class="message">
-    Your reservation has been successfully processed. Your reservation id is: <span id="reservationId" />.
+      <div class="form-row">
+        <label>Start Date:</label>
+        <input name="fromDate" type="text" class="date" />
+      </div>
+
+      <div class="form-row">
+        <label>End Date:</label>
+        <input name="toDate" type="text" class="date"/>
+      </div>
+
+      <div class="form-row">
+        <label>Reserved By:</label>
+        <input name="owner" type="input" size="64" />
+      </div>
+
+      <div class="form-row">
+        <div class="reservation-btn">
+          <button id="submitReservation">Place Reservation</button>
+        </div>
+      </div>
+
+
+      <div id="validation-error" class="message">Reservation failed - please check your input for completeness.</div>
+      <div id="conflict-error" class="message">The room is already reserved for this period, please choose a different period.</div>
+      <div id="system-error" class="message">Reservation failed - please try again later.</div>
+    </form>
+
+    <div id="reservation-successful-message" class="message">
+      Your reservation has been successfully processed. Your reservation id is:
+      <span id="reservationId" />.
+    </div>
+
+
+   
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/reservation.js"></script>
+  <script> 
+    $( function() {
+      $( ".date" ).datepicker();
+    } );
+  </script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+
+
 
 </body>
+
 </html>

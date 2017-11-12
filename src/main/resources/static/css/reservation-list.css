@@ -1,5 +1,28 @@
-@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
 
 .message {
     display: none;
+    color: white;
+    font-family: Yantramanav;
+    font-size: 150%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.reservations {
+    color: white;
+    font-family: Yantramanav;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+body {
+    background-image: url("../img/backgroundDesat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }

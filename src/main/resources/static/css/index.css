@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/backgroundDesat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-family: Yantramanav;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.container {
+}
+
+.container .item {
+    font-family: Montserrat;
+    font-size: 2em;
+    flex: 1;
+    flex-basis: 25%;
+    background-color: rgb(233, 233, 233); /* Green */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;   
+}
+
+.container .item a{
+    text-decoration: none; 
+    color: gray;
+}
+
+@media (min-width: 900px){
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+label, button {
+    display: block;
+    margin-top: 15px;
+}
+
+.message {
+    display: none;
+}
+
+

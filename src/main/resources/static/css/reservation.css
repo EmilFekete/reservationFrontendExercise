@@ -1,7 +1,4 @@
-@CHARSET "ISO-8859-1";
-
-label,
-button {
+label, button {
     display: block;
     margin-top: 15px;
 }
@@ -9,3 +6,23 @@ button {
 .message {
     display: none;
 }
+
+body {
+    background-image: url("../img/backgroundDesat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row label {
+
+}
+
+.form-row input {
+    flex: 1;
+}
+

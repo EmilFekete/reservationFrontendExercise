@@ -8,19 +8,30 @@
 <body>
 
   <form id="reservationForm">
-    <label>Facility ID:</label>
-    <input name="resourceId" type="input" />
-  
+    <div class="form-row">
+      <label>Facility ID:</label>
+      <input name="resourceId" type="input" />
+    </div>
+    
+  <div class="form-row">
     <label>Start Date:</label>
     <input name="fromDate"   type="date" />
-  
+  </div>
+    
+  <div class="form-row">
     <label>End Date:</label>
     <input name="toDate"     type="date" />
-  
+  </div>
+    
+  <div class="form-row">
     <label>Reserved By:</label>
     <input name="owner"      type="input" size="64" />
-  
+  </div>
+    
+  <div class="form-row">
     <button id="submitReservation">Place Reservation</button>
+  </div>
+    
   
     <div id="validation-error" class="message">Reservation failed - please check your input for completeness.</div>
     <div id="conflict-error"   class="message">The room is already reserved for this period, please choose a different period.</div>
